@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            >
+        <VideoView
+                android:id="@+id/video_view"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="0dp"
+                android:scaleType="fitXY"
+                android:layout_height="320dp"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/weixin_im"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="0dp"
+                android:layout_height="320dp"/>
+    </LinearLayout>
+
+    <com.ismartv.launcher.ui.widget.MyHorizontalView
+            android:id="@+id/hs_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="false"
+            android:clickable="false"
+            android:scrollbars="none"
+            android:addStatesFromChildren="true"
+            android:clipChildren="true"
+            android:splitMotionEvents="true"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="0dp">
+        <LinearLayout
+                android:focusable="false"
+                android:clickable="false"
+                android:descendantFocusability="beforeDescendants"
+                android:id="@+id/content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+    </com.ismartv.launcher.ui.widget.MyHorizontalView>
+
+    <com.ismartv.launcher.ui.widget.MyHorizontalView
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+        <LinearLayout
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/title"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+    </com.ismartv.launcher.ui.widget.MyHorizontalView>
+
+</LinearLayout>
+
