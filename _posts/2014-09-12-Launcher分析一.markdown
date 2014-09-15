@@ -16,9 +16,12 @@ categories: jekyll update
 </application>
 {% endhighlight %}
 
-`android:hardwareAccelerated`  为整个应用程序使用硬件加速.
+`android:hardwareAccelerated`  
 
-`android:largeHeap`  设置largeHeap可以增加内存的申请量.
+  为整个应用程序使用硬件加速.
+
+`android:largeHeap`  
+  设置largeHeap可以增加内存的申请量.
 
 
 {% highlight xml %}
