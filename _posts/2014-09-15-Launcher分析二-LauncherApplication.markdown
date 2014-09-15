@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Launcher 源码分析二-LauncherApplication"
-date:   2014-09-10 15:37:57
+title:  "Launcher 源码分析二 LauncherApplication"
+date: 2014-09-15
 categories: jekyll update
 ---
 
@@ -12,7 +12,7 @@ public class LauncherApplication extends Application {
         super.onCreate();
         LauncherAppState.setApplicationContext(this);
         LauncherAppState.getInstance();
-    }
+    }  
     @Override
     public void onTerminate() {
         super.onTerminate();
