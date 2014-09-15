@@ -13,7 +13,6 @@ public class LauncherApplication extends Application {
         LauncherAppState.setApplicationContext(this);
         LauncherAppState.getInstance();
     }
-
     @Override
     public void onTerminate() {
         super.onTerminate();
