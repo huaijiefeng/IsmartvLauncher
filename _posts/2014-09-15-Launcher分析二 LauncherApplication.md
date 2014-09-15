@@ -20,3 +20,6 @@ public class LauncherApplication extends Application {
     }
 }
 {% endhighlight %}
+
+`onTerminate`  
+This method is for use in emulated process environments.
