@@ -126,12 +126,14 @@ PS：intent-filter中 <action android:name="android.intent.action.MAIN" />和 <c
 "adjustPan" 该Activity主窗口并不调整屏幕的大小以便留出软键盘的空间。相反，当前窗口的内容将自动移动以便当前焦点从不被键盘覆盖和用户能总是看到输入内容的部分。这个通常是不期望比调整大小，因为用户可能关闭软键盘以便获得与被覆盖内容的交互操作。
  
 
-`android.intent.action.MAIN`  它主要是决定我们程序的入口。因为我们的应用可能不止一个activity ,
+`android.intent.action.MAIN`  
+它主要是决定我们程序的入口。因为我们的应用可能不止一个activity ,
 但是在启动的时候应该启动哪个activity呢？就是则它决定的。
 
 `android.intent.category.HOME`
 
-`android.intent.category.DEFAULT`  每一个通过 startActivity() 方法发出的隐式 Intent 都至少有一个 category，就是 "android.intent.category.DEFAULT"，所以只要是想接收一个隐式 Intent 的 Activity 都应该包括 "android.intent.category.DEFAULT" category，不然将导致 Intent 匹配失败。
+`android.intent.category.DEFAULT`  
+每一个通过 startActivity() 方法发出的隐式 Intent 都至少有一个 category，就是 "android.intent.category.DEFAULT"，所以只要是想接收一个隐式 Intent 的 Activity 都应该包括 "android.intent.category.DEFAULT" category，不然将导致 Intent 匹配失败。
 
 `android.intent.category.MONKEY`
 
